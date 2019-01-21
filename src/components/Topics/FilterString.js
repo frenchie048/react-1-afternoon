@@ -12,7 +12,9 @@ export default class FilterString extends Component {
   }
 
   handleChange(value) {
-    this.setState = ({ userInput: value });
+    this.setState({
+      userInput: value
+    });
   }
 
   filterTheString(userInput) {
@@ -26,7 +28,7 @@ export default class FilterString extends Component {
     }
 
     console.log(filteredArray);
-    this.setState = ({ filteredArray: filteredArray });
+    this.setState({ filteredArray: filteredArray });
   }
 
   render() {
